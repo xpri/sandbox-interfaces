@@ -1,0 +1,8 @@
+src/
+include/
+
+build/
+install/
+log/
+.vscode/
+*.pyc
