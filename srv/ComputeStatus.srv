@@ -1,0 +1,19 @@
+# Request
+
+float32 battery_voltage
+string command
+---
+# Response
+
+bool success
+string message
+
+# The .srv is used to define the structure of a serivce in ROS2
+# The .msg is just a broadcast whilist the .srv lets you respond as well.
+# ROS2 waits for a request and then responds. In this case it waits for a
+# battery_voltage and command reuqest then it sends back a bool and a message
+# string.
+# The structure is made up of
+# Request
+# ---(the three dashes are NEEDED! (Also nothing can be after the --- not even whitespaces!!))
+# Response
